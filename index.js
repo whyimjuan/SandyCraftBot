@@ -163,3 +163,9 @@ if (!command) return;
     message.reply('Ocurrió un error al ejecutar este comando.');
   }
 });
+
+// Configura el puerto que Render asignará automáticamente
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+  console.log(`Servidor web escuchando en el puerto ${port}`);
+});
