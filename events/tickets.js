@@ -1,5 +1,4 @@
 const { Client, GatewayIntentBits, Partials, EmbedBuilder, ActionRowBuilder, StringSelectMenuBuilder, ChannelType, PermissionsBitField, ButtonBuilder, ButtonStyle, ModalBuilder, TextInputBuilder, TextInputStyle, Events } = require('discord.js');
-const { createTranscript } = require('discord-html-transcripts');
 require('dotenv').config();
 
 const client = new Client({
