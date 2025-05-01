@@ -165,7 +165,9 @@ if (!command) return;
 });
 
 // Configura el puerto que Render asignará automáticamente
+const express = require('express');
+const app = express();
 const port = process.env.PORT || 3000;
-app.listen(port, () => {
-  console.log(`Servidor web escuchando en el puerto ${port}`);
-});
+
+app.get('/', (req, res) => res.send('Configurando Puerto'));
+app.listen(port, () => console.log(`Server on port ${port}`));
